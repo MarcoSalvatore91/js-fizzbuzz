@@ -16,16 +16,18 @@ let elementNumber = ' ';
 // 1- Scrivere un programma che stampi i numeri da 1 a 100
 for (let i = 1; i <= 100; i++) {
     // 2- Per i multipli di 3 stampare la parola Fizz 
-    if (i % 3 === 0) {
-        console.log('Fizz')
-    // 3- Per i multipli di 5 stampare la parola Buzz 
-    } if (i % 5 === 0) {
-        console.log('Buzz')
-    // 4- Per i multipli di 3 e 5 stampare la parola FizzBuzz
-    } if (i % 3 === 0 && i % 5 === 0) {
+    if (i % 3 === 0 && i % 5 === 0) {
         console.log('FizzBuzz')
+    // 3- Per i multipli di 5 stampare la parola Buzz 
+    } if (i % 3 === 0 && !(i % 5 === 0)) {
+        console.log('Fizz')
+    // 4- Per i multipli di 3 e 5 stampare la parola FizzBuzz
+    } if (i % 5 === 0 && !(i % 3 === 0)) {
+        console.log('Buzz')
     } else {
         elementNumber += ` ${i}`;
         console.log(elementNumber);
     }
 }
+
+numberList.innerText = elementNumber;
