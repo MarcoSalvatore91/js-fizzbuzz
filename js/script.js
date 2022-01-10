@@ -21,15 +21,15 @@ for (let i = 1; i <= 100; i++) {
         elementNumber += `<li id"number"> FizzBuzz</li>`;
         console.log('FizzBuzz')
     // 3- Per i multipli di 3 stampare la parola Fizz
-    } else if (i % 3 === 0 && !(i % 5 === 0)) {
+    } else if (i % 3 === 0) {
         elementNumber += `<li id"number"> Fizz</li>`;
         console.log('Fizz')
     // 4- Per i multipli di 5 stampare la parola Buzz
-    } else if (i % 5 === 0 && !(i % 3 === 0)) {
+    } else if (i % 5 === 0) {
         elementNumber += `<li id"number"> Buzz</li>`;
         console.log('Buzz')
     } else {
-        elementNumber += `<li id"number"> ${i}</li>`;
+        elementNumber += `<li>${i}</li>`;
         console.log(i);
     }
 }
